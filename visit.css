@@ -1,0 +1,59 @@
+    body {
+        margin-left: 200px;
+        padding: 200px;
+        background-color: rgb(145, 110, 110);
+    }
+    
+    button {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background: linear-gradient(45deg, #ebc3c3, #b6a47e);
+        opacity: 1;
+        transition: all 0.5s;
+        padding: 15px;
+        margin: 4px 2px;
+        width: 800px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        filter: blur(8px);
+        opacity: 0.6;
+    }
+    
+    div {
+        text-align: center;
+    }
+    
+    h1 {
+        cursor: pointer;
+    }
+    
+    button span {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5;
+    }
+    
+    button span::after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -50px;
+        transition: 0.5s;
+    }
+    
+    button:hover span {
+        padding-right: 25px;
+    }
+    
+    button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .no-under-line {
+        text-decoration: none;
+    }
